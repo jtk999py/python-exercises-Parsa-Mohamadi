@@ -3,9 +3,9 @@
 کوچکتر از عدد تولیدی کامپیوتر نوشت برنامه پیام دهد که عدد را بزرگتر کن و اگر دو عدد برابر باشند
 پیام تبریک دهد و اجرای بازی متوقف شود.)بازی حدس عدد'(###'''
 import random
-hidenum=random.randint(1,10)
+hidenum=random.randint(1,100)
 while True:
-    x=int(input('  :بین 1 تا 10 یک عدد را حدس بزنید'))
+    x=int(input('  :بین 1 تا 100 یک عدد را حدس بزنید'))
     if x>hidenum :
         print('عدد را کوچکتر کن')
     elif x<hidenum:
