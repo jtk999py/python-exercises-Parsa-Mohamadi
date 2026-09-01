@@ -3,14 +3,26 @@
 ["hack", "fraud", "scam", "password", "atack"]
 آن کلمه را پیدا و تعداد مقدار آن را نمایش دهید.
 '''
-
+ 
 #input
 
 x = input('enter your sentence : ')
 
-#list
-
-texts = ['hack','fraud','scam','password','atack']
+#list and null counter
+texts = ['hack', 'fraud', 'scam', 'password', 'atack']
+y = x.lower().split()
+counter = 0
+twords = []
 
 #functions
+for i in y:
+    if i in texts:
+        counter = counter + 1
+        twords.append(i)
 
+#conditional statements
+if counter > 0:
+    print(f'moshtaak ha : {twords}')
+    print(f'tedad tekrar: {counter}')
+else:
+    print('No matching words found')

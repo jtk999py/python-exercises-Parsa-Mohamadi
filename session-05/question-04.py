@@ -32,6 +32,3 @@ mn = ws[mi]
 
 print('word-->',mn)
 print('tekrar-->',mc)
-
-
-
